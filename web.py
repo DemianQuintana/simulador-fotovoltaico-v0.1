@@ -89,7 +89,6 @@ if calcular:
         resultados = calcular_generacion(inputs)
         st.session_state[RESULTADOS_KEY] = resultados
         st.session_state.vista_activa = "resultados"
-        st.session_state.mensaje_exito = "Simulacion calculada correctamente."
         st.rerun()
     except ValueError as error:
         st.error(str(error))
